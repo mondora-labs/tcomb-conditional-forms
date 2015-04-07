@@ -15,8 +15,9 @@
 *
 */
 
-var t = require("tcomb");
-var R = require("ramda");
+var cloneDeep = require("lodash.clonedeep");
+var keys      = require("lodash.keys");
+var t         = require("tcomb");
 
 var SchemaType = require("./lib/schema-type.js");
 
@@ -34,16 +35,16 @@ var add = function (input) {
     if (exists) {
         throw new Error("Input with name `" + input.name + "` already exists");
     }
-    catalogue[input.name] = R.clone(input);
+    catalogue[input.name] = cloneDeep(input);
 };
 exports.add = t.func([InputType], t.Nil).of(add);
 
 var list = function () {
-    return R.keys(catalogue);
+    return keys(catalogue);
 };
 exports.list = t.func([], t.list(t.Str)).of(list);
 
 var get = function (name) {
-    return R.clone(catalogue[name]);
+    return cloneDeep(catalogue[name]);
 };
 exports.get = t.func([t.Str], InputType).of(get);

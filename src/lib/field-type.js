@@ -1,5 +1,4 @@
-var t = require("tcomb-validation");
-var R = require("ramda");
+var t = require("tcomb");
 
 var SchemaType = require("./schema-type.js");
 

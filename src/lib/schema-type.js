@@ -1,16 +1,16 @@
-var t = require("tcomb-validation");
-var R = require("ramda");
+var t    = require("tcomb-validation");
+var keys = require("lodash.keys");
 
 /*
 *   SchemaType is a tcomb type that describes a Schema.
 */
 
 var BaseSchemaType = t.struct({
-    optional: t.maybe(t.Bool)
+    required: t.maybe(t.Bool)
 });
 
 var SchemaType = t.subtype(t.Obj, function (schema) {
-    var availableTypes = R.keys(types);
+    var availableTypes = keys(types);
     return (
         t.validate(schema.type, t.enums.of(availableTypes)).isValid() &&
         t.validate(schema, types[schema.type]).isValid()

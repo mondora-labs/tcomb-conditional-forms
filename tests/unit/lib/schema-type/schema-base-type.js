@@ -9,18 +9,18 @@ var BaseSchemaType = SchemaType.__get__("BaseSchemaType");
 describe("BaseSchemaType", function () {
 
     describe("valid schemas", function () {
-        it("valid `optional` property", function () {
+        it("valid `required` property", function () {
             var schema = {
-                optional: true
+                required: true
             };
             t.validate(schema, BaseSchemaType).isValid().should.equal(true);
         });
     });
 
     describe("invalid schemas", function () {
-        it("invalid `optional` property", function () {
+        it("invalid `required` property", function () {
             var schema = {
-                optional: "notABoolean"
+                required: "notABoolean"
             };
             t.validate(schema, BaseSchemaType).isValid().should.equal(false);
         });

@@ -1,7 +1,7 @@
-var R     = require("ramda");
-var React = require("react");
-var t     = require("tcomb-form");
-var tic   = require("tcomb-input-collection");
+var assign = require("lodash.assign");
+var React  = require("react");
+var t      = require("tcomb-form");
+var tic    = require("tcomb-input-collection");
 
 var ConditionInput = require("./condition-input.jsx");
 var inputCatalogue = require("../input-catalogue.js");
@@ -59,7 +59,7 @@ var FieldInput = React.createClass({
             condition: t.Str
         });
         var input = this.state.value.inputType ? inputCatalogue.get(this.state.value.inputType) : {};
-        var fields = R.merge({
+        var fields = assign({
             name: true,
             inputType: true,
             required: true,

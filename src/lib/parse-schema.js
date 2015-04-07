@@ -33,8 +33,8 @@
 *
 */
 
-var t = require("tcomb-validation");
-var R = require("ramda");
+var mapValues = require("lodash.mapvalues");
+var t         = require("tcomb-validation");
 
 var SchemaType = require("./schema-type.js");
 
@@ -58,7 +58,7 @@ var parsers = {
         return t.list(parseSchema(schema.of));
     },
     structure: function (schema) {
-        return t.struct(R.mapObj(parseSchema, schema.shape));
+        return t.struct(mapValues(schema.shape, parseSchema));
     }
 };
 var parseSchema = function (schema) {

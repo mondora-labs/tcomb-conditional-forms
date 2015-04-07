@@ -1,4 +1,3 @@
-var R     = require("ramda");
 var React = require("react");
 var sift  = require("sift");
 var t     = require("tcomb-react") && require("tcomb-form");
@@ -40,27 +39,23 @@ var Form = React.createClass({
         }, this.triggerChange);
     },
     getTypeFromValue: function () {
-        return R.pipe(
-            R.filter((function (field) {
+        return t.struct(this.props.schema.fields
+            .filter((function (field) {
                 return sift(field.condition)(this.state.value);
-            }).bind(this)),
-            R.map(function (field) {
-                return [field.name, parseSchema(field.schema)];
-            }),
-            R.fromPairs,
-            t.struct
-        )(this.props.schema.fields);
+            }).bind(this))
+            .reduce(function (acc, field) {
+                acc[field.name] = parseSchema(field.schema);
+                return acc;
+            }, {}));
     },
     getOptions: function () {
-        return R.pipe(
-            R.map(function (field) {
-                return [field.name, {
+        return this.props.schema.fields
+            .reduce(function (acc, field) {
+                acc.fields[field.name] = {
                     factory: inputCatalogue.get(field.inputType).component
-                }];
-            }),
-            R.fromPairs,
-            R.createMapEntry("fields")
-        )(this.props.schema.fields);
+                };
+                return acc;
+            }, {fields: {}});
     },
     render: function () {
         return (
