@@ -1,11 +1,8 @@
 {
-  "name": "tcomb-serializable-schema",
-  "version": "1.0.0",
+  "name": "tcomb-conditional-forms",
+  "version": "0.1.0",
   "description": "",
-  "main": "example.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "src/components/form.jsx",
   "dependencies": {
     "ramda": "^0.13.0",
     "react": "^0.13.1",
@@ -35,8 +32,8 @@
     "tcomb-form": "^0.4.8"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "env NODE_PATH=\"./src/\" mocha --compilers \".:./tests/compiler.js\" tests/unit/**/*.js*"
   },
-  "author": "",
+  "author": "Paolo Scanferla <paolo.scanferla@mondora.com>",
   "license": "MIT"
 }
