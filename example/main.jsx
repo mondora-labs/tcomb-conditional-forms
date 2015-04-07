@@ -39,8 +39,9 @@ inputCatalogue.add({
     },
     schemaGetter: function (fieldFormValue) {
         return {
-            type: "boolean",
-            required: true
+            type: "string",
+            allowedValues: fieldFormValue.allowedValues || [],
+            required: fieldFormValue.required
         };
     },
     component: t.form.Radio
@@ -87,7 +88,7 @@ var formSchema = {
         *   Produced by FieldForm-s
         */
         {
-            name: "First Name",
+            name: "Name",
             inputType: "Text",
             schema: {
                 type: "string",
@@ -96,10 +97,11 @@ var formSchema = {
             condition: {/* Empty selector means always */}
         },
         {
-            name: "Last Name",
-            inputType: "Text",
+            name: "Gender",
+            inputType: "Radio",
             schema: {
                 type: "string",
+                allowedValues: ["M", "F"],
                 required: true
             },
             condition: {/* Empty selector means always */}
