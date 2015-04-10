@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">tcomb-conditional-forms</h1>
+          <h3 class="report-date">Friday, April 10 2015, 10:58pm</h3>
+        </div>
+        <div class="quick-summary-cnt">
+            <ul class="list-unstyled quick-summary">
+              <li class="qs-item summary-duration" title="Duration">27<span>MS</span></li>
+              <li class="qs-item summary-suites" title="Suites">16</li>
+              <li class="qs-item summary-tests" title="Tests">11</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">11</li>
+              <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+              <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+            </ul>        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">27<span>MS</span></h1>
+              <h4 class="summary-label">MS</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">16</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">11</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">11</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+              <div id="a8f83064-869d-4840-ba88-80a1a6d8d276" class="suite has-suites">
+                <h3 class="suite-title">Schema for irreducible type boolean</h3>
+                <h5 class="suite-filename">/tests/unit/lib/schema-type/boolean-type.js</h5>
+            
+                  <section class="suite-wrap">
+                    <div id="9c1838e5-02fe-4ff1-b35c-01c0b444f408" class="suite has-tests has-passed">
+                      <h3 class="suite-title">valid schemas</h3>
+                      <h5 class="suite-filename">/tests/unit/lib/schema-type/boolean-type.js</h5>
+                      <!-- Suite Chart -->
+                      <div class="suite-chart-wrap">
+                        <canvas id="9c1838e5-02fe-4ff1-b35c-01c0b444f408" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+                      </div>
+                      <div class="suite-data-wrap">
+                        <!-- Suite Summary -->
+                        <ul class="suite-summary list-unstyled">
+                          <li class="suite-summary-item duration">2 ms</li>
+                          <li class="suite-summary-item tests">1</li>
+                          <li class="suite-summary-item passed">1</li>
+                          <li class="suite-summary-item failed">0</li>
+                          <li class="suite-summary-item pending">0</li>
+                        </ul>
+                        <!-- Test Info -->
+                        <div class="suite-test-wrap">
+                          <div class="suite-test-header" data-toggle="collapse" data-target="#9c1838e5-02fe-4ff1-b35c-01c0b444f408-test-list">
+                            <h4 class="suite-test-header-title">Tests</h4>
+                          </div>
+                          <div id="9c1838e5-02fe-4ff1-b35c-01c0b444f408-test-list" class="list-group test-list collapse in">
+                              <div id="1fa2abc5-7815-40b3-aca9-8127a863ef70" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    simple boolean
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#1fa2abc5-7815-40b3-aca9-8127a863ef70 > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">2 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  type: <span class="hljs-string">"boolean"</span>
+                              };
+                              t.validate(schema, SchemaType).isValid().should.equal(<span class="hljs-literal">true</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>        </div>
+                        </div>
+                      </div>
+                  
+                  
+                    </div>
+                  </section>
+            
+              </div>
+            </section>
+            <section class="suite-wrap">
+              <div id="ee88aaa6-d483-4c39-b29f-a264dfb57e99" class="suite has-suites">
+                <h3 class="suite-title">Schema for type list</h3>
+                <h5 class="suite-filename">/tests/unit/lib/schema-type/list-type.js</h5>
+            
+                  <section class="suite-wrap">
+                    <div id="9ebf90eb-05b0-41b6-a46e-5cc20fd0dcdd" class="suite has-tests has-passed">
+                      <h3 class="suite-title">valid schemas</h3>
+                      <h5 class="suite-filename">/tests/unit/lib/schema-type/list-type.js</h5>
+                      <!-- Suite Chart -->
+                      <div class="suite-chart-wrap">
+                        <canvas id="9ebf90eb-05b0-41b6-a46e-5cc20fd0dcdd" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+                      </div>
+                      <div class="suite-data-wrap">
+                        <!-- Suite Summary -->
+                        <ul class="suite-summary list-unstyled">
+                          <li class="suite-summary-item duration">1 ms</li>
+                          <li class="suite-summary-item tests">1</li>
+                          <li class="suite-summary-item passed">1</li>
+                          <li class="suite-summary-item failed">0</li>
+                          <li class="suite-summary-item pending">0</li>
+                        </ul>
+                        <!-- Test Info -->
+                        <div class="suite-test-wrap">
+                          <div class="suite-test-header" data-toggle="collapse" data-target="#9ebf90eb-05b0-41b6-a46e-5cc20fd0dcdd-test-list">
+                            <h4 class="suite-test-header-title">Tests</h4>
+                          </div>
+                          <div id="9ebf90eb-05b0-41b6-a46e-5cc20fd0dcdd-test-list" class="list-group test-list collapse in">
+                              <div id="480400b2-e6b6-49b9-8066-d628ec8bdc42" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    simple list
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#480400b2-e6b6-49b9-8066-d628ec8bdc42 > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">1 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  type: <span class="hljs-string">"list"</span>,
+                                  <span class="hljs-keyword">of</span>: {
+                                      type: <span class="hljs-string">"string"</span>
+                                  }
+                              };
+                              t.validate(schema, SchemaType).isValid().should.equal(<span class="hljs-literal">true</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>        </div>
+                        </div>
+                      </div>
+                  
+                  
+                    </div>
+                  </section>
+                  <section class="suite-wrap">
+                    <div id="c25dc4ed-80e3-4cd4-a384-7144f07c0c89" class="suite has-tests has-passed">
+                      <h3 class="suite-title">invalid schemas</h3>
+                      <h5 class="suite-filename">/tests/unit/lib/schema-type/list-type.js</h5>
+                      <!-- Suite Chart -->
+                      <div class="suite-chart-wrap">
+                        <canvas id="c25dc4ed-80e3-4cd4-a384-7144f07c0c89" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+                      </div>
+                      <div class="suite-data-wrap">
+                        <!-- Suite Summary -->
+                        <ul class="suite-summary list-unstyled">
+                          <li class="suite-summary-item duration">2 ms</li>
+                          <li class="suite-summary-item tests">1</li>
+                          <li class="suite-summary-item passed">1</li>
+                          <li class="suite-summary-item failed">0</li>
+                          <li class="suite-summary-item pending">0</li>
+                        </ul>
+                        <!-- Test Info -->
+                        <div class="suite-test-wrap">
+                          <div class="suite-test-header" data-toggle="collapse" data-target="#c25dc4ed-80e3-4cd4-a384-7144f07c0c89-test-list">
+                            <h4 class="suite-test-header-title">Tests</h4>
+                          </div>
+                          <div id="c25dc4ed-80e3-4cd4-a384-7144f07c0c89-test-list" class="list-group test-list collapse in">
+                              <div id="1e89fc3d-c863-4caf-a1ba-5597123af074" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    invalid &#x60;of&#x60; property
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#1e89fc3d-c863-4caf-a1ba-5597123af074 > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">2 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  type: <span class="hljs-string">"list"</span>,
+                                  <span class="hljs-keyword">of</span>: {
+                                      notASchema: <span class="hljs-string">"notASchema"</span>
+                                  }
+                              };
+                              t.validate(schema, SchemaType).isValid().should.equal(<span class="hljs-literal">false</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>        </div>
+                        </div>
+                      </div>
+                  
+                  
+                    </div>
+                  </section>
+            
+              </div>
+            </section>
+            <section class="suite-wrap">
+              <div id="4462d383-7cf4-4480-8a3e-3cde44b63d09" class="suite has-suites">
+                <h3 class="suite-title">Schema for irreducible type number</h3>
+                <h5 class="suite-filename">/tests/unit/lib/schema-type/number-type.js</h5>
+            
+                  <section class="suite-wrap">
+                    <div id="855ac208-4f11-48ef-b7bc-d81e9246b692" class="suite has-tests has-passed">
+                      <h3 class="suite-title">valid schemas</h3>
+                      <h5 class="suite-filename">/tests/unit/lib/schema-type/number-type.js</h5>
+                      <!-- Suite Chart -->
+                      <div class="suite-chart-wrap">
+                        <canvas id="855ac208-4f11-48ef-b7bc-d81e9246b692" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+                      </div>
+                      <div class="suite-data-wrap">
+                        <!-- Suite Summary -->
+                        <ul class="suite-summary list-unstyled">
+                          <li class="suite-summary-item duration">0 ms</li>
+                          <li class="suite-summary-item tests">1</li>
+                          <li class="suite-summary-item passed">1</li>
+                          <li class="suite-summary-item failed">0</li>
+                          <li class="suite-summary-item pending">0</li>
+                        </ul>
+                        <!-- Test Info -->
+                        <div class="suite-test-wrap">
+                          <div class="suite-test-header" data-toggle="collapse" data-target="#855ac208-4f11-48ef-b7bc-d81e9246b692-test-list">
+                            <h4 class="suite-test-header-title">Tests</h4>
+                          </div>
+                          <div id="855ac208-4f11-48ef-b7bc-d81e9246b692-test-list" class="list-group test-list collapse in">
+                              <div id="327cb0d6-5138-4c87-88ef-58914cc439a9" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    simple number
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#327cb0d6-5138-4c87-88ef-58914cc439a9 > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">0 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  type: <span class="hljs-string">"number"</span>
+                              };
+                              t.validate(schema, SchemaType).isValid().should.equal(<span class="hljs-literal">true</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>        </div>
+                        </div>
+                      </div>
+                  
+                  
+                    </div>
+                  </section>
+            
+              </div>
+            </section>
+            <section class="suite-wrap">
+              <div id="07255ae3-b086-464f-9353-c00bc50e4ba2" class="suite has-suites">
+                <h3 class="suite-title">BaseSchemaType</h3>
+                <h5 class="suite-filename">/tests/unit/lib/schema-type/schema-base-type.js</h5>
+            
+                  <section class="suite-wrap">
+                    <div id="26ca7a74-51b8-4a96-819b-775ba2a5ab00" class="suite has-tests has-passed">
+                      <h3 class="suite-title">valid schemas</h3>
+                      <h5 class="suite-filename">/tests/unit/lib/schema-type/schema-base-type.js</h5>
+                      <!-- Suite Chart -->
+                      <div class="suite-chart-wrap">
+                        <canvas id="26ca7a74-51b8-4a96-819b-775ba2a5ab00" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+                      </div>
+                      <div class="suite-data-wrap">
+                        <!-- Suite Summary -->
+                        <ul class="suite-summary list-unstyled">
+                          <li class="suite-summary-item duration">1 ms</li>
+                          <li class="suite-summary-item tests">1</li>
+                          <li class="suite-summary-item passed">1</li>
+                          <li class="suite-summary-item failed">0</li>
+                          <li class="suite-summary-item pending">0</li>
+                        </ul>
+                        <!-- Test Info -->
+                        <div class="suite-test-wrap">
+                          <div class="suite-test-header" data-toggle="collapse" data-target="#26ca7a74-51b8-4a96-819b-775ba2a5ab00-test-list">
+                            <h4 class="suite-test-header-title">Tests</h4>
+                          </div>
+                          <div id="26ca7a74-51b8-4a96-819b-775ba2a5ab00-test-list" class="list-group test-list collapse in">
+                              <div id="0667a424-e5fe-4796-8a96-d66fe3b966bb" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    valid &#x60;required&#x60; property
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#0667a424-e5fe-4796-8a96-d66fe3b966bb > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">1 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  required: <span class="hljs-literal">true</span>
+                              };
+                              t.validate(schema, BaseSchemaType).isValid().should.equal(<span class="hljs-literal">true</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>        </div>
+                        </div>
+                      </div>
+                  
+                  
+                    </div>
+                  </section>
+                  <section class="suite-wrap">
+                    <div id="be429888-caa8-4e74-8000-f810b793b73a" class="suite has-tests has-passed">
+                      <h3 class="suite-title">invalid schemas</h3>
+                      <h5 class="suite-filename">/tests/unit/lib/schema-type/schema-base-type.js</h5>
+                      <!-- Suite Chart -->
+                      <div class="suite-chart-wrap">
+                        <canvas id="be429888-caa8-4e74-8000-f810b793b73a" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+                      </div>
+                      <div class="suite-data-wrap">
+                        <!-- Suite Summary -->
+                        <ul class="suite-summary list-unstyled">
+                          <li class="suite-summary-item duration">0 ms</li>
+                          <li class="suite-summary-item tests">1</li>
+                          <li class="suite-summary-item passed">1</li>
+                          <li class="suite-summary-item failed">0</li>
+                          <li class="suite-summary-item pending">0</li>
+                        </ul>
+                        <!-- Test Info -->
+                        <div class="suite-test-wrap">
+                          <div class="suite-test-header" data-toggle="collapse" data-target="#be429888-caa8-4e74-8000-f810b793b73a-test-list">
+                            <h4 class="suite-test-header-title">Tests</h4>
+                          </div>
+                          <div id="be429888-caa8-4e74-8000-f810b793b73a-test-list" class="list-group test-list collapse in">
+                              <div id="57864d49-025d-4d9d-9a91-6052a18c82d0" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    invalid &#x60;required&#x60; property
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#57864d49-025d-4d9d-9a91-6052a18c82d0 > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">0 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  required: <span class="hljs-string">"notABoolean"</span>
+                              };
+                              t.validate(schema, BaseSchemaType).isValid().should.equal(<span class="hljs-literal">false</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>        </div>
+                        </div>
+                      </div>
+                  
+                  
+                    </div>
+                  </section>
+            
+              </div>
+            </section>
+            <section class="suite-wrap">
+              <div id="aa0d7541-0f43-4c4a-9cf8-6acb0ff82878" class="suite has-suites">
+                <h3 class="suite-title">Schema for irreducible type string</h3>
+                <h5 class="suite-filename">/tests/unit/lib/schema-type/string-type.js</h5>
+            
+                  <section class="suite-wrap">
+                    <div id="2b90853a-f7a0-43bc-a246-63e23f73668c" class="suite has-tests has-passed">
+                      <h3 class="suite-title">valid schemas</h3>
+                      <h5 class="suite-filename">/tests/unit/lib/schema-type/string-type.js</h5>
+                      <!-- Suite Chart -->
+                      <div class="suite-chart-wrap">
+                        <canvas id="2b90853a-f7a0-43bc-a246-63e23f73668c" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+                      </div>
+                      <div class="suite-data-wrap">
+                        <!-- Suite Summary -->
+                        <ul class="suite-summary list-unstyled">
+                          <li class="suite-summary-item duration">0 ms</li>
+                          <li class="suite-summary-item tests">2</li>
+                          <li class="suite-summary-item passed">2</li>
+                          <li class="suite-summary-item failed">0</li>
+                          <li class="suite-summary-item pending">0</li>
+                        </ul>
+                        <!-- Test Info -->
+                        <div class="suite-test-wrap">
+                          <div class="suite-test-header" data-toggle="collapse" data-target="#2b90853a-f7a0-43bc-a246-63e23f73668c-test-list">
+                            <h4 class="suite-test-header-title">Tests</h4>
+                          </div>
+                          <div id="2b90853a-f7a0-43bc-a246-63e23f73668c-test-list" class="list-group test-list collapse in">
+                              <div id="afdc1c76-c934-488e-ae32-ae5c65e1038e" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    simple string
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#afdc1c76-c934-488e-ae32-ae5c65e1038e > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">0 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  type: <span class="hljs-string">"string"</span>
+                              };
+                              t.validate(schema, SchemaType).isValid().should.equal(<span class="hljs-literal">true</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>            <div id="275fc9f0-2476-4f93-b1ea-f0f5fdfaaf75" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    valid &#x60;allowedValues&#x60; property
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#275fc9f0-2476-4f93-b1ea-f0f5fdfaaf75 > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">0 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  type: <span class="hljs-string">"string"</span>,
+                                  allowedValues: [<span class="hljs-string">"value_0"</span>, <span class="hljs-string">"value_1"</span>]
+                              };
+                              t.validate(schema, SchemaType).isValid().should.equal(<span class="hljs-literal">true</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>        </div>
+                        </div>
+                      </div>
+                  
+                  
+                    </div>
+                  </section>
+                  <section class="suite-wrap">
+                    <div id="04c6dbae-3905-4a24-95a4-87388f1f0b3e" class="suite has-tests has-passed">
+                      <h3 class="suite-title">invalid schemas</h3>
+                      <h5 class="suite-filename">/tests/unit/lib/schema-type/string-type.js</h5>
+                      <!-- Suite Chart -->
+                      <div class="suite-chart-wrap">
+                        <canvas id="04c6dbae-3905-4a24-95a4-87388f1f0b3e" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+                      </div>
+                      <div class="suite-data-wrap">
+                        <!-- Suite Summary -->
+                        <ul class="suite-summary list-unstyled">
+                          <li class="suite-summary-item duration">1 ms</li>
+                          <li class="suite-summary-item tests">1</li>
+                          <li class="suite-summary-item passed">1</li>
+                          <li class="suite-summary-item failed">0</li>
+                          <li class="suite-summary-item pending">0</li>
+                        </ul>
+                        <!-- Test Info -->
+                        <div class="suite-test-wrap">
+                          <div class="suite-test-header" data-toggle="collapse" data-target="#04c6dbae-3905-4a24-95a4-87388f1f0b3e-test-list">
+                            <h4 class="suite-test-header-title">Tests</h4>
+                          </div>
+                          <div id="04c6dbae-3905-4a24-95a4-87388f1f0b3e-test-list" class="list-group test-list collapse in">
+                              <div id="36be47ba-f375-4385-b77b-69cad80addd3" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    invalid &#x60;allowedValues&#x60; property
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#36be47ba-f375-4385-b77b-69cad80addd3 > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">1 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  type: <span class="hljs-string">"string"</span>,
+                                  allowedValues: [<span class="hljs-string">"value_0"</span>, <span class="hljs-string">"value_1"</span>, <span class="hljs-number">0</span>]
+                              };
+                              t.validate(schema, SchemaType).isValid().should.equal(<span class="hljs-literal">false</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>        </div>
+                        </div>
+                      </div>
+                  
+                  
+                    </div>
+                  </section>
+            
+              </div>
+            </section>
+            <section class="suite-wrap">
+              <div id="88ba26c9-b68d-42f3-9fe8-72976743f181" class="suite has-suites">
+                <h3 class="suite-title">Schema for type structure</h3>
+                <h5 class="suite-filename">/tests/unit/lib/schema-type/structure-type.js</h5>
+            
+                  <section class="suite-wrap">
+                    <div id="8638a5ae-1495-4f63-9685-3ea81e4aed59" class="suite has-tests has-passed">
+                      <h3 class="suite-title">valid schemas</h3>
+                      <h5 class="suite-filename">/tests/unit/lib/schema-type/structure-type.js</h5>
+                      <!-- Suite Chart -->
+                      <div class="suite-chart-wrap">
+                        <canvas id="8638a5ae-1495-4f63-9685-3ea81e4aed59" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+                      </div>
+                      <div class="suite-data-wrap">
+                        <!-- Suite Summary -->
+                        <ul class="suite-summary list-unstyled">
+                          <li class="suite-summary-item duration">1 ms</li>
+                          <li class="suite-summary-item tests">1</li>
+                          <li class="suite-summary-item passed">1</li>
+                          <li class="suite-summary-item failed">0</li>
+                          <li class="suite-summary-item pending">0</li>
+                        </ul>
+                        <!-- Test Info -->
+                        <div class="suite-test-wrap">
+                          <div class="suite-test-header" data-toggle="collapse" data-target="#8638a5ae-1495-4f63-9685-3ea81e4aed59-test-list">
+                            <h4 class="suite-test-header-title">Tests</h4>
+                          </div>
+                          <div id="8638a5ae-1495-4f63-9685-3ea81e4aed59-test-list" class="list-group test-list collapse in">
+                              <div id="61911fa0-985a-4f60-9afa-7f8c0482ff32" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    simple structure
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#61911fa0-985a-4f60-9afa-7f8c0482ff32 > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">1 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  type: <span class="hljs-string">"structure"</span>,
+                                  shape: {
+                                      prop: {
+                                          type: <span class="hljs-string">"string"</span>
+                                      }
+                                  }
+                              };
+                              t.validate(schema, SchemaType).isValid().should.equal(<span class="hljs-literal">true</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>        </div>
+                        </div>
+                      </div>
+                  
+                  
+                    </div>
+                  </section>
+                  <section class="suite-wrap">
+                    <div id="dd2039ca-fd13-4588-8f95-c83eadb87fcf" class="suite has-tests has-passed">
+                      <h3 class="suite-title">invalid schemas</h3>
+                      <h5 class="suite-filename">/tests/unit/lib/schema-type/structure-type.js</h5>
+                      <!-- Suite Chart -->
+                      <div class="suite-chart-wrap">
+                        <canvas id="dd2039ca-fd13-4588-8f95-c83eadb87fcf" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+                      </div>
+                      <div class="suite-data-wrap">
+                        <!-- Suite Summary -->
+                        <ul class="suite-summary list-unstyled">
+                          <li class="suite-summary-item duration">0 ms</li>
+                          <li class="suite-summary-item tests">1</li>
+                          <li class="suite-summary-item passed">1</li>
+                          <li class="suite-summary-item failed">0</li>
+                          <li class="suite-summary-item pending">0</li>
+                        </ul>
+                        <!-- Test Info -->
+                        <div class="suite-test-wrap">
+                          <div class="suite-test-header" data-toggle="collapse" data-target="#dd2039ca-fd13-4588-8f95-c83eadb87fcf-test-list">
+                            <h4 class="suite-test-header-title">Tests</h4>
+                          </div>
+                          <div id="dd2039ca-fd13-4588-8f95-c83eadb87fcf-test-list" class="list-group test-list collapse in">
+                              <div id="2e63d7f3-0bf6-47c9-b552-375ec82c0fbd" class="list-group-item test passed">
+                                <!-- Test Heading -->
+                                <div class="test-heading">
+                                  <h4 class="test-title">
+                                    <span class="text-muted hidden"> it </span>
+                                    invalid &#x60;shape&#x60; property
+                                  </h4>
+                                  <div class="pull-right">
+                                    <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#2e63d7f3-0bf6-47c9-b552-375ec82c0fbd > .test-code.collapse">Code</button>
+                                    <span class="test-duration fast">0 ms</span>
+                                  </div>
+                                </div>
+                                <!-- Test Errors -->
+                                <!-- Test Code -->
+                                <div class="test-code collapse">
+                                  <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> schema = {
+                                  type: <span class="hljs-string">"structure"</span>,
+                                  shape: {
+                                      notASchema: <span class="hljs-string">"notASchema"</span>
+                                  }
+                              };
+                              t.validate(schema, SchemaType).isValid().should.equal(<span class="hljs-literal">false</span>);</code></pre>
+                                </div>
+                                <!-- Test Error Stack -->
+                              </div>        </div>
+                        </div>
+                      </div>
+                  
+                  
+                    </div>
+                  </section>
+            
+              </div>
+            </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="https://github.dowjones.net/grubera/mochawesome" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2015.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
