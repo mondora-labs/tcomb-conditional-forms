@@ -75,7 +75,7 @@ var FieldInput = React.createClass({
                     factory: ConditionInput
                 },
                 allowedValues: {
-                    factory: tic.StringList
+                    factory: tic.SimpleStringList
                 }
             }
         };
