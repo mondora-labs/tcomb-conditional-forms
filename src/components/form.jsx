@@ -1,6 +1,7 @@
-var React = require("react");
-var sift  = require("sift");
-var t     = require("tcomb-react") && require("tcomb-form");
+var assign = require("lodash.assign");
+var React  = require("react");
+var sift   = require("sift");
+var t      = require("tcomb-react") && require("tcomb-form");
 
 var inputCatalogue = require("../input-catalogue.js");
 var FieldType      = require("../lib/field-type.js");
@@ -51,9 +52,10 @@ var Form = React.createClass({
     getOptions: function () {
         return this.props.schema.fields
             .reduce(function (acc, field) {
-                acc.fields[field.name] = {
-                    factory: inputCatalogue.get(field.inputType).component
-                };
+                var input = inputCatalogue.get(field.inputType);
+                acc.fields[field.name] = assign(input.options || {}, {
+                    factory: input.component
+                });
                 return acc;
             }, {fields: {}});
     },

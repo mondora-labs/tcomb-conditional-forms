@@ -1,6 +1,6 @@
 /*
-*   The Input catalogue is simply a list of Input components, whereas an Input
-*   component is an object with a `name` and a `component`.
+*   The Input catalogue is simply a dictrionary of Inputs, whereas an Input is
+*   an object like:
 *
 *   {
 *       "name": "inputName",
@@ -10,7 +10,10 @@
 *       "schemaGetter": function (value) {
 *           // ...
 *       },
-*       "components": ReactClass_0
+*       "components": ReactClass_0,
+*       "options": {
+*           // ...
+*       }
 *   }
 *
 */
@@ -27,7 +30,8 @@ var InputType = t.struct({
     name: t.Str,
     fields: t.dict(t.Str, t.Bool),
     schemaGetter: t.func([t.Obj], SchemaType),
-    component: t.Func
+    component: t.Func,
+    options: t.maybe(t.Obj)
 });
 
 var add = function (input) {

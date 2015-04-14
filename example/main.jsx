@@ -1,9 +1,9 @@
 var React = require("react");
 var t     = require("tcomb-form");
 
-var inputCatalogue = require("../src/input-catalogue.js");
-var Form           = require("../src/components/form.jsx");
-var EntityForm     = require("../src/components/entity-form.jsx");
+var inputCatalogue = require("../").catalogue;
+var Form           = require("../components").Form;
+var EntityForm     = require("../components").EntityForm;
 
 /*
 *   Add some inputs to the catalogue
@@ -45,6 +45,21 @@ inputCatalogue.add({
         };
     },
     component: t.form.Radio
+});
+inputCatalogue.add({
+    name: "Date",
+    fields: {
+    },
+    schemaGetter: function (fieldFormValue) {
+        return {
+            type: "string",
+            required: fieldFormValue.required
+        };
+    },
+    component: t.form.Textbox,
+    options: {
+        type: "date"
+    }
 });
 
 var App = React.createClass({
@@ -125,6 +140,15 @@ var formSchema = {
             condition: {
                 "Has email": true
             }
+        },
+        {
+            name: "Birthday",
+            inputType: "Date",
+            schema: {
+                type: "string",
+                required: true
+            },
+            condition: {}
         }
     ]
 };

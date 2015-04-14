@@ -2,7 +2,7 @@
   "name": "tcomb-conditional-forms",
   "version": "0.3.0",
   "description": "",
-  "main": "src/components/form.jsx",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/mondora-labs/tcomb-conditional-forms.git"
