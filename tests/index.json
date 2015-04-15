@@ -6,8 +6,8 @@
     "passes": 11,
     "pending": 0,
     "failures": 0,
-    "start": "2015-04-14T15:34:11.217Z",
-    "end": "2015-04-14T15:34:11.242Z",
+    "start": "2015-04-15T10:11:29.732Z",
+    "end": "2015-04-15T10:11:29.757Z",
     "duration": 25,
     "testsRegistered": 11,
     "passPercent": 100,
@@ -41,8 +41,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"boolean\"</span>\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
                 "isRoot": false,
-                "uuid": "4e904c57-ca94-4e5c-81f8-881597b6d589",
-                "parentUUID": "571a0b6f-c2d7-48fc-adad-bc676aeb2740",
+                "uuid": "cff9fbf1-fe65-48a6-9942-22d1ca658b56",
+                "parentUUID": "3dc7d0fe-af95-4493-ab45-122a13e36c28",
                 "skipped": false
               }
             ],
@@ -50,7 +50,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/tests/unit/lib/schema-type/boolean-type.js",
-            "uuid": "571a0b6f-c2d7-48fc-adad-bc676aeb2740",
+            "uuid": "3dc7d0fe-af95-4493-ab45-122a13e36c28",
             "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/boolean-type.js",
             "passes": [
               "[Circular ~.suites.suites.0.suites.0.tests.0]"
@@ -76,7 +76,7 @@
         "root": false,
         "_timeout": 2000,
         "file": "/tests/unit/lib/schema-type/boolean-type.js",
-        "uuid": "51f508e8-a299-400c-94ad-366a9ee2976a",
+        "uuid": "892cf984-7f58-4352-b6d5-5f06110597cd",
         "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/boolean-type.js",
         "passes": [],
         "failures": [],
@@ -105,7 +105,7 @@
                 "title": "simple list",
                 "fullTitle": "Schema for type list valid schemas simple list",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -113,8 +113,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"list\"</span>,\n    <span class=\"hljs-keyword\">of</span>: {\n        type: <span class=\"hljs-string\">\"string\"</span>\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
                 "isRoot": false,
-                "uuid": "603bd87b-da6a-415e-a894-80cc6ecfdcf8",
-                "parentUUID": "f95f727d-21d4-4738-acc7-c5bf351d4d54",
+                "uuid": "e0bf54ad-af01-4696-848d-034f9717bcee",
+                "parentUUID": "2385436b-c684-4980-9020-4035b68be184",
                 "skipped": false
               }
             ],
@@ -122,7 +122,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/tests/unit/lib/schema-type/list-type.js",
-            "uuid": "f95f727d-21d4-4738-acc7-c5bf351d4d54",
+            "uuid": "2385436b-c684-4980-9020-4035b68be184",
             "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/list-type.js",
             "passes": [
               "[Circular ~.suites.suites.1.suites.0.tests.0]"
@@ -140,7 +140,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 1
+            "duration": 0
           },
           {
             "title": "invalid schemas",
@@ -158,8 +158,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"list\"</span>,\n    <span class=\"hljs-keyword\">of</span>: {\n        notASchema: <span class=\"hljs-string\">\"notASchema\"</span>\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
                 "isRoot": false,
-                "uuid": "2a63cedf-01a7-40b1-9947-121eb6b1a308",
-                "parentUUID": "1d48ca4e-e858-435b-961f-779eeda03dba",
+                "uuid": "3aee10e7-7abf-43bf-acaf-7b904f1f97eb",
+                "parentUUID": "7bec8412-c13b-464e-8f97-ec985cbbf952",
                 "skipped": false
               }
             ],
@@ -167,7 +167,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/tests/unit/lib/schema-type/list-type.js",
-            "uuid": "1d48ca4e-e858-435b-961f-779eeda03dba",
+            "uuid": "7bec8412-c13b-464e-8f97-ec985cbbf952",
             "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/list-type.js",
             "passes": [
               "[Circular ~.suites.suites.1.suites.1.tests.0]"
@@ -193,7 +193,7 @@
         "root": false,
         "_timeout": 2000,
         "file": "/tests/unit/lib/schema-type/list-type.js",
-        "uuid": "dc341a34-12ee-4f9c-b3e3-e7063666504c",
+        "uuid": "3f1ca2a2-b308-4b66-9a51-38d5d2022b0a",
         "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/list-type.js",
         "passes": [],
         "failures": [],
@@ -230,8 +230,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"number\"</span>\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
                 "isRoot": false,
-                "uuid": "7240cc80-77ac-4b2c-a9d1-29121a3bbc0f",
-                "parentUUID": "e56b5050-2c75-4064-a90b-98e0aa34072d",
+                "uuid": "ae80e32e-cbc9-493f-993c-849dd6763bd8",
+                "parentUUID": "5caaa1ac-65b1-4e73-86f2-a27a073d851d",
                 "skipped": false
               }
             ],
@@ -239,7 +239,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/tests/unit/lib/schema-type/number-type.js",
-            "uuid": "e56b5050-2c75-4064-a90b-98e0aa34072d",
+            "uuid": "5caaa1ac-65b1-4e73-86f2-a27a073d851d",
             "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/number-type.js",
             "passes": [
               "[Circular ~.suites.suites.2.suites.0.tests.0]"
@@ -265,7 +265,7 @@
         "root": false,
         "_timeout": 2000,
         "file": "/tests/unit/lib/schema-type/number-type.js",
-        "uuid": "50cc46ac-7806-423f-b99a-2135476f88eb",
+        "uuid": "0676235b-0dca-46bd-a871-062f22aace0c",
         "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/number-type.js",
         "passes": [],
         "failures": [],
@@ -302,8 +302,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    required: <span class=\"hljs-literal\">true</span>\n};\nt.validate(schema, BaseSchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
                 "isRoot": false,
-                "uuid": "fd570a24-e9ca-4e6f-b37b-6e3161aae36f",
-                "parentUUID": "a753c72f-d660-46f5-b646-183386b1f2c7",
+                "uuid": "4202a6f0-bd80-43f5-8b1e-9e2be2196b35",
+                "parentUUID": "1940af36-4a9d-4f94-8247-3dcc0ccd1d99",
                 "skipped": false
               }
             ],
@@ -311,7 +311,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/tests/unit/lib/schema-type/schema-base-type.js",
-            "uuid": "a753c72f-d660-46f5-b646-183386b1f2c7",
+            "uuid": "1940af36-4a9d-4f94-8247-3dcc0ccd1d99",
             "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/schema-base-type.js",
             "passes": [
               "[Circular ~.suites.suites.3.suites.0.tests.0]"
@@ -339,7 +339,7 @@
                 "title": "invalid `required` property",
                 "fullTitle": "BaseSchemaType invalid schemas invalid `required` property",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -347,8 +347,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    required: <span class=\"hljs-string\">\"notABoolean\"</span>\n};\nt.validate(schema, BaseSchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
                 "isRoot": false,
-                "uuid": "c76ef609-00b2-49a4-bd40-db5dae275563",
-                "parentUUID": "48b72333-a40c-42a9-a8d6-4d720992ce59",
+                "uuid": "1800c061-e3a6-4db0-a823-9a558c49dd14",
+                "parentUUID": "11cffa41-928c-4ec4-b03c-0a8b7c3340b0",
                 "skipped": false
               }
             ],
@@ -356,7 +356,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/tests/unit/lib/schema-type/schema-base-type.js",
-            "uuid": "48b72333-a40c-42a9-a8d6-4d720992ce59",
+            "uuid": "11cffa41-928c-4ec4-b03c-0a8b7c3340b0",
             "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/schema-base-type.js",
             "passes": [
               "[Circular ~.suites.suites.3.suites.1.tests.0]"
@@ -374,7 +374,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 1
+            "duration": 0
           }
         ],
         "tests": [],
@@ -382,7 +382,7 @@
         "root": false,
         "_timeout": 2000,
         "file": "/tests/unit/lib/schema-type/schema-base-type.js",
-        "uuid": "42eb0d73-d7dc-423e-a408-c3b91862f334",
+        "uuid": "332874e1-e48c-4d9b-b120-fc6d93130655",
         "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/schema-base-type.js",
         "passes": [],
         "failures": [],
@@ -419,8 +419,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
                 "isRoot": false,
-                "uuid": "7d156f4c-044f-4035-83b4-e7418d00db89",
-                "parentUUID": "bf4a5806-b92e-44e5-8b64-364fde523e0c",
+                "uuid": "d16bdac1-fcda-4800-adce-8536fc5b31cb",
+                "parentUUID": "41fe837c-2502-4758-9a40-43df60200159",
                 "skipped": false
               },
               {
@@ -435,8 +435,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>,\n    allowedValues: [<span class=\"hljs-string\">\"value_0\"</span>, <span class=\"hljs-string\">\"value_1\"</span>]\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
                 "isRoot": false,
-                "uuid": "cdef3b30-64ab-4701-8913-c703a059dc09",
-                "parentUUID": "bf4a5806-b92e-44e5-8b64-364fde523e0c",
+                "uuid": "aaee0dc4-9db7-4c03-8626-389d0a6005df",
+                "parentUUID": "41fe837c-2502-4758-9a40-43df60200159",
                 "skipped": false
               }
             ],
@@ -444,7 +444,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/tests/unit/lib/schema-type/string-type.js",
-            "uuid": "bf4a5806-b92e-44e5-8b64-364fde523e0c",
+            "uuid": "41fe837c-2502-4758-9a40-43df60200159",
             "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/string-type.js",
             "passes": [
               "[Circular ~.suites.suites.4.suites.0.tests.0]",
@@ -473,7 +473,7 @@
                 "title": "invalid `allowedValues` property",
                 "fullTitle": "Schema for irreducible type string invalid schemas invalid `allowedValues` property",
                 "timedOut": false,
-                "duration": 0,
+                "duration": 1,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -481,8 +481,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>,\n    allowedValues: [<span class=\"hljs-string\">\"value_0\"</span>, <span class=\"hljs-string\">\"value_1\"</span>, <span class=\"hljs-number\">0</span>]\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
                 "isRoot": false,
-                "uuid": "624ba6cc-c35e-4a97-81b8-59df5d72f777",
-                "parentUUID": "81cd9265-770c-4293-bc80-eda2249466f8",
+                "uuid": "55d12809-9ac7-4e09-bff4-49bf6f0e072a",
+                "parentUUID": "8d19665d-0201-4f43-bc98-e4d12d31739a",
                 "skipped": false
               }
             ],
@@ -490,7 +490,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/tests/unit/lib/schema-type/string-type.js",
-            "uuid": "81cd9265-770c-4293-bc80-eda2249466f8",
+            "uuid": "8d19665d-0201-4f43-bc98-e4d12d31739a",
             "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/string-type.js",
             "passes": [
               "[Circular ~.suites.suites.4.suites.1.tests.0]"
@@ -508,7 +508,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 0
+            "duration": 1
           }
         ],
         "tests": [],
@@ -516,7 +516,7 @@
         "root": false,
         "_timeout": 2000,
         "file": "/tests/unit/lib/schema-type/string-type.js",
-        "uuid": "dcc08565-9111-470b-8431-902ecd7e1965",
+        "uuid": "74c9d64a-9eeb-48c3-b1f5-661442c092dd",
         "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/string-type.js",
         "passes": [],
         "failures": [],
@@ -545,7 +545,7 @@
                 "title": "simple structure",
                 "fullTitle": "Schema for type structure valid schemas simple structure",
                 "timedOut": false,
-                "duration": 1,
+                "duration": 0,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -553,8 +553,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"structure\"</span>,\n    shape: {\n        prop: {\n            type: <span class=\"hljs-string\">\"string\"</span>\n        }\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
                 "isRoot": false,
-                "uuid": "aaa32845-e30d-43b2-aebe-90cbf302f308",
-                "parentUUID": "39a09453-e407-4982-a6d6-bc0ac988b628",
+                "uuid": "5f25ec30-7715-4dc2-a4d2-0b349fcb4094",
+                "parentUUID": "4fe5a22d-8b85-4cf3-9d77-75917a902cc1",
                 "skipped": false
               }
             ],
@@ -562,7 +562,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/tests/unit/lib/schema-type/structure-type.js",
-            "uuid": "39a09453-e407-4982-a6d6-bc0ac988b628",
+            "uuid": "4fe5a22d-8b85-4cf3-9d77-75917a902cc1",
             "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/structure-type.js",
             "passes": [
               "[Circular ~.suites.suites.5.suites.0.tests.0]"
@@ -580,7 +580,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 1
+            "duration": 0
           },
           {
             "title": "invalid schemas",
@@ -598,8 +598,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"structure\"</span>,\n    shape: {\n        notASchema: <span class=\"hljs-string\">\"notASchema\"</span>\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
                 "isRoot": false,
-                "uuid": "8926df15-762b-40a0-a349-8498dfc7f1cc",
-                "parentUUID": "17516b82-1934-404e-bf9b-0178fa8802ec",
+                "uuid": "7a542464-526e-400c-898f-4d482c138f22",
+                "parentUUID": "2d6bd141-52b8-4796-97f6-fd10684724a4",
                 "skipped": false
               }
             ],
@@ -607,7 +607,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/tests/unit/lib/schema-type/structure-type.js",
-            "uuid": "17516b82-1934-404e-bf9b-0178fa8802ec",
+            "uuid": "2d6bd141-52b8-4796-97f6-fd10684724a4",
             "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/structure-type.js",
             "passes": [
               "[Circular ~.suites.suites.5.suites.1.tests.0]"
@@ -633,7 +633,7 @@
         "root": false,
         "_timeout": 2000,
         "file": "/tests/unit/lib/schema-type/structure-type.js",
-        "uuid": "df6d8d53-fec7-4690-a825-d006392e1af5",
+        "uuid": "86855826-6a90-45c6-8c26-325123fb2bc6",
         "fullFile": "/Users/pscanf/mondora/tcomb-conditional-forms/tests/unit/lib/schema-type/structure-type.js",
         "passes": [],
         "failures": [],
@@ -656,7 +656,7 @@
     "pending": [],
     "root": true,
     "_timeout": 2000,
-    "uuid": "1cb93dbc-1abf-41bf-956a-172a6abe9694",
+    "uuid": "cb229d2d-1ea3-4aa3-aeda-f8dda107ac5d",
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -689,15 +689,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"boolean\"</span>\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "b893831f-3787-4c94-a3b8-93f261d11096",
-      "parentUUID": "571a0b6f-c2d7-48fc-adad-bc676aeb2740",
+      "uuid": "e0ed5607-b09b-46b4-9f61-b8d0cab7b530",
+      "parentUUID": "3dc7d0fe-af95-4493-ab45-122a13e36c28",
       "skipped": false
     },
     {
       "title": "simple list",
       "fullTitle": "valid schemas simple list",
       "timedOut": false,
-      "duration": 1,
+      "duration": 0,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -705,8 +705,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"list\"</span>,\n    <span class=\"hljs-keyword\">of</span>: {\n        type: <span class=\"hljs-string\">\"string\"</span>\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "14d99c1d-50bf-418a-84f2-f39ccf097708",
-      "parentUUID": "f95f727d-21d4-4738-acc7-c5bf351d4d54",
+      "uuid": "c73832a5-4ca1-42b4-b308-8eb2e867c7be",
+      "parentUUID": "2385436b-c684-4980-9020-4035b68be184",
       "skipped": false
     },
     {
@@ -721,8 +721,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"list\"</span>,\n    <span class=\"hljs-keyword\">of</span>: {\n        notASchema: <span class=\"hljs-string\">\"notASchema\"</span>\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
       "isRoot": false,
-      "uuid": "91fe5058-01ff-44d4-82b7-a3b5abbf8ed8",
-      "parentUUID": "1d48ca4e-e858-435b-961f-779eeda03dba",
+      "uuid": "c822a194-a5fe-4a17-8b55-f0cf68bba2ff",
+      "parentUUID": "7bec8412-c13b-464e-8f97-ec985cbbf952",
       "skipped": false
     },
     {
@@ -737,8 +737,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"number\"</span>\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "5f34fc12-1657-4c4b-9135-c1c599b9ccd3",
-      "parentUUID": "e56b5050-2c75-4064-a90b-98e0aa34072d",
+      "uuid": "c58dd05c-845f-4407-9dbd-e1a0c616cca8",
+      "parentUUID": "5caaa1ac-65b1-4e73-86f2-a27a073d851d",
       "skipped": false
     },
     {
@@ -753,15 +753,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    required: <span class=\"hljs-literal\">true</span>\n};\nt.validate(schema, BaseSchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "f84d0f00-6ae3-475a-b512-a60446e2497c",
-      "parentUUID": "a753c72f-d660-46f5-b646-183386b1f2c7",
+      "uuid": "e421ea7b-5d33-4c68-8374-5f26747cb493",
+      "parentUUID": "1940af36-4a9d-4f94-8247-3dcc0ccd1d99",
       "skipped": false
     },
     {
       "title": "invalid `required` property",
       "fullTitle": "invalid schemas invalid `required` property",
       "timedOut": false,
-      "duration": 1,
+      "duration": 0,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -769,8 +769,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    required: <span class=\"hljs-string\">\"notABoolean\"</span>\n};\nt.validate(schema, BaseSchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
       "isRoot": false,
-      "uuid": "1f39a55e-5b5d-47eb-8c9a-eb671558a729",
-      "parentUUID": "48b72333-a40c-42a9-a8d6-4d720992ce59",
+      "uuid": "298de6b9-053c-46ed-aebd-d87f39ce2440",
+      "parentUUID": "11cffa41-928c-4ec4-b03c-0a8b7c3340b0",
       "skipped": false
     },
     {
@@ -785,8 +785,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "cb4759ac-f3d3-436f-aac7-5420c9c7d3fa",
-      "parentUUID": "bf4a5806-b92e-44e5-8b64-364fde523e0c",
+      "uuid": "6010a48a-b52b-4d7c-bac6-9a68b1205130",
+      "parentUUID": "41fe837c-2502-4758-9a40-43df60200159",
       "skipped": false
     },
     {
@@ -801,29 +801,13 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>,\n    allowedValues: [<span class=\"hljs-string\">\"value_0\"</span>, <span class=\"hljs-string\">\"value_1\"</span>]\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "ca718e81-8dbc-45c4-85e6-cabb6992b922",
-      "parentUUID": "bf4a5806-b92e-44e5-8b64-364fde523e0c",
+      "uuid": "8f689505-1865-4131-9331-57589258f3cc",
+      "parentUUID": "41fe837c-2502-4758-9a40-43df60200159",
       "skipped": false
     },
     {
       "title": "invalid `allowedValues` property",
       "fullTitle": "invalid schemas invalid `allowedValues` property",
-      "timedOut": false,
-      "duration": 0,
-      "state": "passed",
-      "speed": "fast",
-      "pass": true,
-      "fail": false,
-      "pending": false,
-      "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>,\n    allowedValues: [<span class=\"hljs-string\">\"value_0\"</span>, <span class=\"hljs-string\">\"value_1\"</span>, <span class=\"hljs-number\">0</span>]\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
-      "isRoot": false,
-      "uuid": "d29e28b5-b996-4dd0-b83b-0c913e3995d4",
-      "parentUUID": "81cd9265-770c-4293-bc80-eda2249466f8",
-      "skipped": false
-    },
-    {
-      "title": "simple structure",
-      "fullTitle": "valid schemas simple structure",
       "timedOut": false,
       "duration": 1,
       "state": "passed",
@@ -831,10 +815,26 @@
       "pass": true,
       "fail": false,
       "pending": false,
+      "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>,\n    allowedValues: [<span class=\"hljs-string\">\"value_0\"</span>, <span class=\"hljs-string\">\"value_1\"</span>, <span class=\"hljs-number\">0</span>]\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
+      "isRoot": false,
+      "uuid": "fd8fb79a-bb90-44bd-acdd-487a7017f06e",
+      "parentUUID": "8d19665d-0201-4f43-bc98-e4d12d31739a",
+      "skipped": false
+    },
+    {
+      "title": "simple structure",
+      "fullTitle": "valid schemas simple structure",
+      "timedOut": false,
+      "duration": 0,
+      "state": "passed",
+      "speed": "fast",
+      "pass": true,
+      "fail": false,
+      "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"structure\"</span>,\n    shape: {\n        prop: {\n            type: <span class=\"hljs-string\">\"string\"</span>\n        }\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "fa7bed3d-d499-42a4-a39d-4518e1c8db78",
-      "parentUUID": "39a09453-e407-4982-a6d6-bc0ac988b628",
+      "uuid": "201ac46c-59c4-4d72-bda7-2219c7562d38",
+      "parentUUID": "4fe5a22d-8b85-4cf3-9d77-75917a902cc1",
       "skipped": false
     },
     {
@@ -849,8 +849,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"structure\"</span>,\n    shape: {\n        notASchema: <span class=\"hljs-string\">\"notASchema\"</span>\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
       "isRoot": false,
-      "uuid": "594dc7d6-d23a-41d4-846b-046c929440bc",
-      "parentUUID": "17516b82-1934-404e-bf9b-0178fa8802ec",
+      "uuid": "f6e54078-d9e2-443a-b99c-ed2dd8d70e9a",
+      "parentUUID": "2d6bd141-52b8-4796-97f6-fd10684724a4",
       "skipped": false
     }
   ],
@@ -869,15 +869,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"boolean\"</span>\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "ac4c3781-5b86-4cc3-9376-f4a3159e9b60",
-      "parentUUID": "571a0b6f-c2d7-48fc-adad-bc676aeb2740",
+      "uuid": "0060a612-c2d9-4691-b9a6-5565b7ec9cf0",
+      "parentUUID": "3dc7d0fe-af95-4493-ab45-122a13e36c28",
       "skipped": false
     },
     {
       "title": "simple list",
       "fullTitle": "valid schemas simple list",
       "timedOut": false,
-      "duration": 1,
+      "duration": 0,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -885,8 +885,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"list\"</span>,\n    <span class=\"hljs-keyword\">of</span>: {\n        type: <span class=\"hljs-string\">\"string\"</span>\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "80e9b511-ac1e-4a34-84d8-8b1f3105219e",
-      "parentUUID": "f95f727d-21d4-4738-acc7-c5bf351d4d54",
+      "uuid": "1b65e826-9b2d-4269-9c1d-d055b6fe81dc",
+      "parentUUID": "2385436b-c684-4980-9020-4035b68be184",
       "skipped": false
     },
     {
@@ -901,8 +901,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"list\"</span>,\n    <span class=\"hljs-keyword\">of</span>: {\n        notASchema: <span class=\"hljs-string\">\"notASchema\"</span>\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
       "isRoot": false,
-      "uuid": "182bdb00-c62f-4b6b-8510-d69e80b18ee1",
-      "parentUUID": "1d48ca4e-e858-435b-961f-779eeda03dba",
+      "uuid": "59e9091d-2f55-482c-a9e3-6d5a9eba16b5",
+      "parentUUID": "7bec8412-c13b-464e-8f97-ec985cbbf952",
       "skipped": false
     },
     {
@@ -917,8 +917,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"number\"</span>\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "d1d6b6ea-d90f-41dc-af09-80aa383d987f",
-      "parentUUID": "e56b5050-2c75-4064-a90b-98e0aa34072d",
+      "uuid": "5eeb54ec-d3d2-49b5-90ad-2221bd8ca8ba",
+      "parentUUID": "5caaa1ac-65b1-4e73-86f2-a27a073d851d",
       "skipped": false
     },
     {
@@ -933,15 +933,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    required: <span class=\"hljs-literal\">true</span>\n};\nt.validate(schema, BaseSchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "26a13892-1e9b-4a47-b5da-46383da7a865",
-      "parentUUID": "a753c72f-d660-46f5-b646-183386b1f2c7",
+      "uuid": "496b4d2d-5560-40b8-a28f-96ec892531df",
+      "parentUUID": "1940af36-4a9d-4f94-8247-3dcc0ccd1d99",
       "skipped": false
     },
     {
       "title": "invalid `required` property",
       "fullTitle": "invalid schemas invalid `required` property",
       "timedOut": false,
-      "duration": 1,
+      "duration": 0,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -949,8 +949,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    required: <span class=\"hljs-string\">\"notABoolean\"</span>\n};\nt.validate(schema, BaseSchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
       "isRoot": false,
-      "uuid": "1c63abad-d3c4-417d-b3a2-55fc32c008cd",
-      "parentUUID": "48b72333-a40c-42a9-a8d6-4d720992ce59",
+      "uuid": "13c6248e-f702-4f28-8b97-edb02f2514df",
+      "parentUUID": "11cffa41-928c-4ec4-b03c-0a8b7c3340b0",
       "skipped": false
     },
     {
@@ -965,8 +965,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "2550db8e-981b-427c-8efe-2933ce57df53",
-      "parentUUID": "bf4a5806-b92e-44e5-8b64-364fde523e0c",
+      "uuid": "7b054483-6d84-473c-8ca3-ff765f393dec",
+      "parentUUID": "41fe837c-2502-4758-9a40-43df60200159",
       "skipped": false
     },
     {
@@ -981,29 +981,13 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>,\n    allowedValues: [<span class=\"hljs-string\">\"value_0\"</span>, <span class=\"hljs-string\">\"value_1\"</span>]\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "1673e511-8ec5-4965-a928-eab442f876d4",
-      "parentUUID": "bf4a5806-b92e-44e5-8b64-364fde523e0c",
+      "uuid": "5d54f250-820a-4a34-a99e-b1357e43a186",
+      "parentUUID": "41fe837c-2502-4758-9a40-43df60200159",
       "skipped": false
     },
     {
       "title": "invalid `allowedValues` property",
       "fullTitle": "invalid schemas invalid `allowedValues` property",
-      "timedOut": false,
-      "duration": 0,
-      "state": "passed",
-      "speed": "fast",
-      "pass": true,
-      "fail": false,
-      "pending": false,
-      "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>,\n    allowedValues: [<span class=\"hljs-string\">\"value_0\"</span>, <span class=\"hljs-string\">\"value_1\"</span>, <span class=\"hljs-number\">0</span>]\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
-      "isRoot": false,
-      "uuid": "b90979c0-ec98-4104-887e-8203cba1150f",
-      "parentUUID": "81cd9265-770c-4293-bc80-eda2249466f8",
-      "skipped": false
-    },
-    {
-      "title": "simple structure",
-      "fullTitle": "valid schemas simple structure",
       "timedOut": false,
       "duration": 1,
       "state": "passed",
@@ -1011,10 +995,26 @@
       "pass": true,
       "fail": false,
       "pending": false,
+      "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"string\"</span>,\n    allowedValues: [<span class=\"hljs-string\">\"value_0\"</span>, <span class=\"hljs-string\">\"value_1\"</span>, <span class=\"hljs-number\">0</span>]\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
+      "isRoot": false,
+      "uuid": "52e8f3ed-b48f-43d5-a1b3-e06a59a8f966",
+      "parentUUID": "8d19665d-0201-4f43-bc98-e4d12d31739a",
+      "skipped": false
+    },
+    {
+      "title": "simple structure",
+      "fullTitle": "valid schemas simple structure",
+      "timedOut": false,
+      "duration": 0,
+      "state": "passed",
+      "speed": "fast",
+      "pass": true,
+      "fail": false,
+      "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"structure\"</span>,\n    shape: {\n        prop: {\n            type: <span class=\"hljs-string\">\"string\"</span>\n        }\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">true</span>);",
       "isRoot": false,
-      "uuid": "7fd3fd39-5b8a-4c1c-a166-7c9e15f63809",
-      "parentUUID": "39a09453-e407-4982-a6d6-bc0ac988b628",
+      "uuid": "f9816572-18be-4ae1-a9c1-64f90cb511bf",
+      "parentUUID": "4fe5a22d-8b85-4cf3-9d77-75917a902cc1",
       "skipped": false
     },
     {
@@ -1029,8 +1029,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> schema = {\n    type: <span class=\"hljs-string\">\"structure\"</span>,\n    shape: {\n        notASchema: <span class=\"hljs-string\">\"notASchema\"</span>\n    }\n};\nt.validate(schema, SchemaType).isValid().should.equal(<span class=\"hljs-literal\">false</span>);",
       "isRoot": false,
-      "uuid": "81f8aa71-b907-4555-90c7-4ba3eba9c5c3",
-      "parentUUID": "17516b82-1934-404e-bf9b-0178fa8802ec",
+      "uuid": "e26eea03-d300-4ddf-9845-89cd4fd73f04",
+      "parentUUID": "2d6bd141-52b8-4796-97f6-fd10684724a4",
       "skipped": false
     }
   ],
