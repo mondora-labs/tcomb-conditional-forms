@@ -13,7 +13,8 @@ var Form = React.createClass({
         onChange: t.maybe(t.Func),
         schema: t.struct({
             fields: t.list(FieldType)
-        })
+        }),
+        commonConfig: t.maybe(t.Obj)
     })),
     getStateFromProps: function (props) {
         return {
@@ -51,13 +52,14 @@ var Form = React.createClass({
     },
     getOptions: function () {
         return this.props.schema.fields
-            .reduce(function (acc, field) {
+            .reduce((function (acc, field) {
                 var input = inputCatalogue.get(field.inputType);
                 acc.fields[field.name] = assign(input.options || {}, {
-                    factory: input.component
+                    factory: input.component,
+                    commonConfig: this.props.commonConfig
                 });
                 return acc;
-            }, {fields: {}});
+            }).bind(this), {fields: {}});
     },
     render: function () {
         return (
