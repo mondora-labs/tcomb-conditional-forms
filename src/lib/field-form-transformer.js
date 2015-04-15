@@ -4,7 +4,10 @@ exports.format = function (field) {
     return {
         name: field.name,
         inputType: field.inputType,
-        allowedValues: field.schema.allowedValues,
+        allowedValues: (
+            field.schema.allowedValues ||
+            (field.schema.of && field.schema.of.allowedValues)
+        ),
         required: field.schema.required,
         condition: JSON.stringify(field.condition)
     };

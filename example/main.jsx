@@ -1,5 +1,6 @@
 var React = require("react");
 var t     = require("tcomb-form");
+var tic   = require("tcomb-input-collection");
 
 var inputCatalogue = require("../").catalogue;
 var Form           = require("../components").Form;
@@ -60,6 +61,42 @@ inputCatalogue.add({
     options: {
         type: "date"
     }
+});
+inputCatalogue.add({
+    name: "Multiselect",
+    fields: {
+        allowedValues: true
+    },
+    schemaGetter: function (fieldFormValue) {
+        return {
+            type: "list",
+            of: {
+                type: "string",
+                allowedValues: fieldFormValue.allowedValues
+            },
+            required: fieldFormValue.required
+        };
+    },
+    component: tic.Multiselect,
+    options: {
+        config: {
+            columns: 2
+        }
+    }
+});
+inputCatalogue.add({
+    name: "Tags",
+    fields: {},
+    schemaGetter: function (fieldFormValue) {
+        return {
+            type: "list",
+            of: {
+                type: "string"
+            },
+            required: fieldFormValue.required
+        };
+    },
+    component: tic.SimpleStringList
 });
 
 var App = React.createClass({
@@ -149,6 +186,38 @@ var formSchema = {
                 required: true
             },
             condition: {}
+        },
+        {
+            name: "Hobbies",
+            inputType: "Multiselect",
+            schema: {
+                type: "list",
+                of: {
+                    type: "string",
+                    allowedValues: [
+                        "Mountain Biking",
+                        "Running",
+                        "Football",
+                        "Other"
+                    ]
+                },
+                required: false
+            },
+            condition: {}
+        },
+        {
+            name: "Other hobbies",
+            inputType: "Tags",
+            schema: {
+                type: "list",
+                of: {
+                    type: "string"
+                },
+                required: false
+            },
+            condition: {
+                "Hobbies": "Other"
+            }
         }
     ]
 };
