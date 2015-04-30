@@ -10,6 +10,7 @@ var FieldType = t.struct({
     name: t.Str,
     inputType: t.Str,
     schema: SchemaType,
+    priority: t.Num,
     condition: t.Obj
 });
 

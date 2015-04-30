@@ -63,7 +63,9 @@ gulp.task("dev", ["run-tests", "build-example-html", "build-example-js"], functi
     });
     gulp.watch([
         "./src/**/*.jsx",
+        "./src/**/*.js",
         "./tests/unit/**/*.jsx",
+        "./tests/unit/**/*.js",
         "./example/main.html",
         "./example/main.jsx"
     ], [

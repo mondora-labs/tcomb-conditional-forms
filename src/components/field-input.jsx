@@ -56,6 +56,7 @@ var FieldInput = React.createClass({
             inputType: t.enums.of(inputCatalogue.list()),
             allowedValues: t.list(t.Str),
             required: t.Bool,
+            priority: t.Num,
             condition: t.Str
         });
         var input = this.state.value.inputType ? inputCatalogue.get(this.state.value.inputType) : {};
@@ -63,6 +64,7 @@ var FieldInput = React.createClass({
             name: true,
             inputType: true,
             required: true,
+            priority: true,
             condition: true
         }, input.fields);
         return getSubStruct(Type, fields);
@@ -76,6 +78,9 @@ var FieldInput = React.createClass({
                 },
                 allowedValues: {
                     factory: tic.SimpleStringList
+                },
+                priority: {
+                    type: "number"
                 }
             }
         };

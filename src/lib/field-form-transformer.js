@@ -9,6 +9,7 @@ exports.format = function (field) {
             (field.schema.of && field.schema.of.allowedValues)
         ),
         required: field.schema.required,
+        priority: field.priority,
         condition: JSON.stringify(field.condition)
     };
 };
@@ -18,6 +19,7 @@ exports.parse = function (value) {
         name: value.name,
         inputType: value.inputType,
         schema: catalogue.get(value.inputType).schemaGetter(value),
+        priority: parseInt(value.priority, 10) || 0,
         condition: JSON.parse(value.condition)
     };
 };
