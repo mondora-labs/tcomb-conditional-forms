@@ -117,6 +117,10 @@ var App = React.createClass({
                 <div className="row">
                     <div className="col-sm-4 col-sm-offset-1">
                         <Form schema={this.state.schema} />
+                        <br />
+                        <pre>
+                            {JSON.stringify(this.state.schema, null, 4)}
+                        </pre>
                     </div>
                     <div className="col-sm-4 col-sm-offset-1">
                         <EntityForm
@@ -140,13 +144,14 @@ var formSchema = {
         *   Produced by FieldForm-s
         */
         {
-            name: "Name",
-            inputType: "Text",
+            name: "Birthday",
+            inputType: "Date",
             schema: {
                 type: "string",
                 required: true
             },
-            condition: {/* Empty selector means always */}
+            priority: 3,
+            condition: {}
         },
         {
             name: "Gender",
@@ -156,36 +161,8 @@ var formSchema = {
                 allowedValues: ["M", "F"],
                 required: true
             },
+            priority: 1,
             condition: {/* Empty selector means always */}
-        },
-        {
-            name: "Has email",
-            inputType: "Checkbox",
-            schema: {
-                type: "boolean",
-                required: true
-            },
-            condition: {/* Empty selector means always */}
-        },
-        {
-            name: "Email address",
-            inputType: "Text",
-            schema: {
-                type: "string",
-                required: true
-            },
-            condition: {
-                "Has email": true
-            }
-        },
-        {
-            name: "Birthday",
-            inputType: "Date",
-            schema: {
-                type: "string",
-                required: true
-            },
-            condition: {}
         },
         {
             name: "Hobbies",
@@ -203,7 +180,40 @@ var formSchema = {
                 },
                 required: false
             },
+            priority: 4,
             condition: {}
+        },
+        {
+            name: "Has email",
+            inputType: "Checkbox",
+            schema: {
+                type: "boolean",
+                required: true
+            },
+            priority: 2,
+            condition: {/* Empty selector means always */}
+        },
+        {
+            name: "Email address",
+            inputType: "Text",
+            schema: {
+                type: "string",
+                required: true
+            },
+            priority: 2,
+            condition: {
+                "Has email": true
+            }
+        },
+        {
+            name: "Name",
+            inputType: "Text",
+            schema: {
+                type: "string",
+                required: true
+            },
+            priority: 0,
+            condition: {/* Empty selector means always */}
         },
         {
             name: "Other hobbies",
@@ -215,6 +225,7 @@ var formSchema = {
                 },
                 required: false
             },
+            priority: 4,
             condition: {
                 "Hobbies": "Other"
             }

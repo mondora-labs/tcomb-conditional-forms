@@ -28,6 +28,7 @@ var AddFieldComponent = React.createClass({
             schema: {
                 type: "string"
             },
+            priority: 0,
             condition: {}
         });
     },
