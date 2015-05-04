@@ -10,8 +10,7 @@ var FieldInput     = require("./field-input.jsx");
 var AddFieldComponent = React.createClass({
     propTypes: {
         elements: React.PropTypes.array.isRequired,
-        add: React.PropTypes.func.isRequired,
-        config: React.PropTypes.object.isRequired
+        add: React.PropTypes.func.isRequired
     },
     add: function () {
         /*
